@@ -14,13 +14,13 @@
 	<!-- Social & Open Graph -->
 	<meta property="og:title" content="SEnzoP" />
 	<meta property="og:description" content="My name is Kanit Wongtachom from Thailand. I'm interesting in technology and play PC games sometime." />
-	<meta property="og:image" content="https://senzop.com/images/social.png"> <!-- include your hosted image full URL -->
+	<meta property="og:image" content="https://senzop.github.io/images/social.png"> <!-- include your hosted image full URL -->
 	<meta property="og:url" content="https://senzop.com" />
 	<meta property="og:type" content="website"/>
 	<meta property="fb:app_id" content="155986954493095"/>
 	<meta name="twitter:title" content="SEnzoP" >
 	<meta name="twitter:description" content="My name is Kanit Wongtachom from Thailand. I'm interesting in technology and play PC games sometime." />
-	<meta name="twitter:image" content="https://senzop.com/images/social.png" /> <!-- include your hosted image full URL -->
+	<meta name="twitter:image" content="https://senzop.github.io/images/social.png" /> <!-- include your hosted image full URL -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@onepagelove" />
 	<meta name="twitter:creator" content="@SEnzoP" />
@@ -206,48 +206,6 @@
 			modal.find('.modal-body').text('Error: No data response. :(');
 		});
 	});
-</script>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" data-cfasync="false"></script>
-<script>
-window.addEventListener('load', function(){
-  window.cookieconsent.initialise({
-   revokeBtn: "<div class='cc-revoke'></div>",
-   type: "opt-in",
-   theme: "classic",
-   palette: {
-       popup: {
-           background: "#234",
-           text: "#fff"
-        },
-       button: {
-           background: "#1bd",
-           text: "#fff"
-        }
-    },
-   content: {
-       message: "This website uses cookies to collect information about you for statistics on our website.",
-       allow: "Accept",
-    },
-    onInitialise: function(status) {
-      if(status == cookieconsent.status.allow) myScripts();
-    },
-    onStatusChange: function(status) {
-      if (this.hasConsented()) myScripts();
-    }
-  })
-});
-
-function myScripts() {
-   // Google Analytics
-   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	ga('create', 'UA-51937534-1', 'senzop.com');
-	ga('send', 'pageview');
-}
 </script>
 </body>
 </html>
