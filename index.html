@@ -1,30 +1,253 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="apple-touch-icon" sizes="76x76" href="icon.png">
-        <link rel="icon" type="image/png" href="icon.png">
-        <title>Countdown to Mico No Safety</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <h1 id="headline">Countdown to Mico No Safety</h1>
-            <div id="countdown">
-                <ul>
-                <li><span id="days"></span>days</li>
-                <li><span id="hours"></span>Hours</li>
-                <li><span id="minutes"></span>Minutes</li>
-                <li><span id="seconds"></span>Seconds</li>
-                </ul>
-            </div>
-            <div id="content" class="emoji">
-                <span>😲</span>
-                <span>🎉</span>
-                <span>🩲</span>
-            </div>
-        </div>
-        <script src="script.js"></script>
-    </body>
+<html lang="en-US">
+
+<head>
+
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+	<!-- SEO -->
+	<title>SEnzoP</title>
+	<meta name="robots" content="index, follow" />
+	<meta name="referrer" content="always" />
+
+	<!-- Social & Open Graph -->
+	<meta property="og:title" content="SEnzoP" />
+	<meta property="og:description" content="My name is Kanit Wongtachom from Thailand. I'm interesting in technology and play PC games sometime." />
+	<meta property="og:image" content="https://senzop.com/images/social.png"> <!-- include your hosted image full URL -->
+	<meta property="og:url" content="https://senzop.com" />
+	<meta property="og:type" content="website"/>
+	<meta property="fb:app_id" content="155986954493095"/>
+	<meta name="twitter:title" content="SEnzoP" >
+	<meta name="twitter:description" content="My name is Kanit Wongtachom from Thailand. I'm interesting in technology and play PC games sometime." />
+	<meta name="twitter:image" content="https://senzop.com/images/social.png" /> <!-- include your hosted image full URL -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@onepagelove" />
+	<meta name="twitter:creator" content="@SEnzoP" />
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="//alpha.senzop.com/icons/57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="//alpha.senzop.com/icons/60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="//alpha.senzop.com/icons/72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="//alpha.senzop.com/icons/76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="//alpha.senzop.com/icons/114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="//alpha.senzop.com/icons/120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="//alpha.senzop.com/icons/144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="//alpha.senzop.com/icons/152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="//alpha.senzop.com/icons/180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="//alpha.senzop.com/icons/192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="//alpha.senzop.com/icons/32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="//alpha.senzop.com/icons/96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="//alpha.senzop.com/icons/16.png">
+	<link rel="manifest" href="//alpha.senzop.com/icons/manifest.json">
+	<meta name="msapplication-TileColor" content="#061c30">
+	<meta name="msapplication-TileImage" content="//alpha.senzop.com/icons/144.png">
+
+	<!-- Theme Color-->
+	<meta name="theme-color" content="#061c30">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel='stylesheet' href='assets/css/split.css' type='text/css' media='screen' />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body.page-template-page-fullsingle-split p {
+			font-family: 'Roboto', sans-serif;
+		}
+		.split-intro .tagline, .split-intro h1 {
+			font-family: 'Roboto', sans-serif;
+		}
+		.split-lists .split-list h3, .split-lists .split-list ul li a {
+			font-family: 'Roboto', sans-serif;
+		}
+		div.split-credit {
+			font-family: 'Roboto', sans-serif;
+		}
+		.modal-title, .modal-body {
+			font-family: 'Roboto', sans-serif;
+		}
+		.split-lists { display: flex; }
+		@media screen and (max-width: 500px) {
+			.split-lists { display: inline-block; }
+		}
+		.split-lists .split-list { width: 50%; }
+	</style>
+
+</head>
+
+<body id="fullsingle" class="page-template-page-fullsingle-split">
+
+<div class="fs-split">
+
+	<!-- Image Side -->
+	<div class="split-image">
+
+	</div>
+
+	<!-- Content Side -->
+	<div class="split-content">
+
+		<div class="split-content-vertically-center">
+		
+			<div class="split-intro">
+				
+				<h1>Kanit Wongtachom</h1>
+
+				<span class="tagline">SEnzoP</span>
+
+			</div>
+
+			<div class="split-bio">
+				
+				<p>My name is Kanit Wongtachom from Thailand. I'm interesting in technology and play PC games sometime.</p>
+
+			</div>
+
+			<div class="split-lists">
+				
+				<div class="split-list">
+
+					<h3>Connect</h3>
+
+					<ul>
+						<li><a href="#Email" data-toggle="modal" data-target="#showContent" data-title="Email" data-content="Email">Email</a></li>
+						<li><a href="https://paypal.me/senzp">PayPal</a></li>
+						<li><a href="https://steamcommunity.com/id/senzop/">Steam</a></li>
+						<li><a href="https://www.twitch.tv/senzop">Twitch</a></li>
+						<li><a href="https://l.senzop.com/YouTube">YouTube</a></li>
+					</ul>
+
+				</div>
+
+				<div class="split-list">
+
+					<h3>Social</h3>
+
+					<ul>
+						<li><a href="#Discord" data-toggle="modal" data-target="#showContent" data-title="Discord" data-content="Discord">Discord</a></li>
+						<li><a href="https://www.facebook.com/nzop.me">Facebook</a></li>
+						<li><a href="https://www.instagram.com/senzop/">Instagram</a></li>
+						<li><a href="#KakaoTalk" data-toggle="modal" data-target="#showContent" data-title="KakaoTalk" data-content="KakaoTalk">KakaoTalk</a></li>
+						<li><a href="https://l.senzop.com/LINE">LINE</a></li>
+						<li><a href="https://t.me/SEnzoP">Telegram</a></li>
+						<li><a href="https://twitter.com/SEnzoP">Twitter</a></li>
+					</ul>
+
+				</div>
+
+				<!-- <div class="split-list">
+
+					<h3>Services</h3>
+
+					<ul>
+						<li><a href="#LAprefixes" data-toggle="modal" data-target="#showContent" data-title="Lao PDR IP List" data-content="LAprefixes">Lao PDR IP List</a></li>
+					</ul>
+
+				</div> -->
+				
+			</div>
+
+			<div class="split-credit">
+
+				<p>&copy;2019 <a href="https://senzop.com">Kanit Wongtachom</a> - <a href="https://onepagelove.com/split">Split Template</a> by <a href="https://onepagelove.com">One Page Love</a></p>
+
+				<!-- 
+				To edit this credit you can remove the CC3.0 license for only $5 here: https://onepagelove.com/split 
+				this really helps contribute towards us developing more templates and means the world to me!
+				Cheers, Rob (@robhope)
+				-->
+
+			</div>		
+
+		</div>
+
+	</div>
+
+</div>
+
+<!-- Modal Content -->
+<div class="modal fade" id="showContent" tabindex="-1" role="dialog" aria-labelledby="showContentTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-scrollable" role="document">
+		<div class="modal-content bg-dark text-light">
+			<div class="modal-header">
+				<h5 class="modal-title" id="showContentTitle"></h5>
+				<button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body bg-white"></div>
+		</div>
+	</div>
+</div>
+
+<!-- jQuery & Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+	$('#showContent').on('show.bs.modal', function (event) {
+		var button = $(event.relatedTarget);
+		var modal = $(this);
+		modal.find('.modal-title').text(button.data('title'));
+		modal.find('.modal-body').html('<div class="d-flex justify-content-center"><div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div></div>');
+		var settings = {
+			'async': true,
+			'url': 'modal-body/'+ button.data('content') +'.html',
+			'method': 'GET',
+			'headers': {
+				'Cache-Control': 'no-cache'
+			}
+		};
+		$.ajax(settings).done(function (response) {
+			modal.find('.modal-body').html(response);
+		}).fail(function (jqXHR, textStatus) {
+			modal.find('.modal-body').text('Error: No data response. :(');
+		});
+	});
+</script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.addEventListener('load', function(){
+  window.cookieconsent.initialise({
+   revokeBtn: "<div class='cc-revoke'></div>",
+   type: "opt-in",
+   theme: "classic",
+   palette: {
+       popup: {
+           background: "#234",
+           text: "#fff"
+        },
+       button: {
+           background: "#1bd",
+           text: "#fff"
+        }
+    },
+   content: {
+       message: "This website uses cookies to collect information about you for statistics on our website.",
+       allow: "Accept",
+    },
+    onInitialise: function(status) {
+      if(status == cookieconsent.status.allow) myScripts();
+    },
+    onStatusChange: function(status) {
+      if (this.hasConsented()) myScripts();
+    }
+  })
+});
+
+function myScripts() {
+   // Google Analytics
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-51937534-1', 'senzop.com');
+	ga('send', 'pageview');
+}
+</script>
+</body>
 </html>
