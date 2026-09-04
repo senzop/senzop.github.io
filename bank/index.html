@@ -3,18 +3,35 @@
 	<head>
 		<meta charset="utf-8">
 		<title>บัญชีธนาคาร - นายคณิต วงศ์ตาชม</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<style>
-            html, body { margin: 0; padding: 0; }
-            iframe {
-                position: fixed;
+            html, body { 
+                margin: 0; 
+                padding: 0; 
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            .iframe-wrapper {
+                position: absolute;
                 top: 0;
                 left: 0;
-                width: 100vw;
-                height: 100vh;
+                right: 0;
+                bottom: 0;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            iframe {
+                width: 100%;
+                height: 100%;
                 border: none;
+                display: block;
             }
         </style>
 	</head>
-	<body><iframe src="https://script.google.com/macros/s/AKfycbyCPfbMPaRatYyhaLk1PikOlSmhc3araGtCq6Y_L7t42Z1Gchb_-b8dL5jCS__93h2e/exec"></iframe></body>
+	<body>
+		<div class="iframe-wrapper">
+            <iframe src="https://script.google.com/macros/s/AKfycbyCPfbMPaRatYyhaLk1PikOlSmhc3araGtCq6Y_L7t42Z1Gchb_-b8dL5jCS__93h2e/exec"></iframe>
+        </div>
+	</body>
 </html>
