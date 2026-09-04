@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Thai QR Payment - นายคณิต วงศ์ตาชม</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link rel="shortcut icon" href="/qrpay/icon.png">
         <link rel="icon" href="/qrpay/icon.png">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -11,16 +11,33 @@
         <meta name="theme-color" content="#0e3d67">
         <link rel="manifest" href="data:application/json;base64,eyJzaG9ydF9uYW1lIjoiVGhhaSBRUiBQYXltZW50IiwibmFtZSI6IlRoYWkgUVIgUGF5bWVudCAtIOC4meC4suC4ouC4hOC4k+C4tOC4lSDguKfguIfguKjguYzguJXguLLguIrguKEiLCJzdGFydF91cmwiOiIuIiwiaWNvbnMiOlt7InNyYyI6Ii9xcnBheS9pY29uMTQ0LnBuZyIsInR5cGUiOiJpbWFnZS9wbmciLCJzaXplcyI6IjE0NHgxNDQifSx7InNyYyI6Ii9xcnBheS9pY29uLnBuZyIsInR5cGUiOiJpbWFnZS9wbmciLCJzaXplcyI6IjE5MngxOTIifV0sImRpc3BsYXkiOiJzdGFuZGFsb25lIiwidGhlbWVfY29sb3IiOiIjMGUzZDY3IiwiYmFja2dyb3VuZF9jb2xvciI6IndoaXRlIn0=">
 		<style>
-            html, body { margin: 0; padding: 0; }
-            iframe {
-                position: fixed;
+            html, body { 
+                margin: 0; 
+                padding: 0; 
+                width: 100%;
+                height: 100%;
+                overflow: hidden; /* บล็อกสกรอลล์ของหน้าเว็บหลัก ป้องกันสกรอลล์ซ้อน */
+            }
+            .iframe-wrapper {
+                position: absolute;
                 top: 0;
                 left: 0;
-                width: 100vw;
-                height: 100vh;
+                right: 0;
+                bottom: 0;
+                overflow-y: auto; /* อนุญาตให้เลื่อนขึ้นลงได้ */
+                -webkit-overflow-scrolling: touch; /* ทำให้ iOS เลื่อนได้ลื่นไหล */
+            }
+            iframe {
+                width: 100%;
+                height: 100%;
                 border: none;
+                display: block;
             }
         </style>
 	</head>
-	<body><iframe src="https://script.google.com/macros/s/AKfycbzrlRi-DoZBSeLQ0nHS2RkM_tYhdyZha4WKWwTIzbP6hE2hu9Jtv9lf3l-16EuUBgN-uA/exec"></iframe></body>
+	<body>
+		<div class="iframe-wrapper">
+            <iframe src="https://script.google.com/macros/s/AKfycbzrlRi-DoZBSeLQ0nHS2RkM_tYhdyZha4WKWwTIzbP6hE2hu9Jtv9lf3l-16EuUBgN-uA/exec"></iframe>
+        </div>
+	</body>
 </html>
